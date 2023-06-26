@@ -3,8 +3,11 @@ const cloudinary = require("../config/cloudinaryConfig");
 const Company = require("../models/company");
 
 exports.createPosition = async (req, res) => {
-  const image = await cloudinary.uploader.upload(req.file.path);
+  console.log(req.body);
+  console.log(req.file.path);
+  //   console.log(image);
   try {
+    const image = await cloudinary.uploader.upload(req.file.path);
     const newPosition = await Company.create({
       name: req.name,
       industry: req.industry,
