@@ -15,7 +15,7 @@
 3. Create a `.env` file in the root directory of the backend and add the following environment variables:
 
    ```
-  MONGO_URL = 
+   MONGO_URL = 
    PORT = 8000
    CLOUD_NAME = 
    API_KEY=
