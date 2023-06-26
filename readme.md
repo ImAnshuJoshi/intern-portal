@@ -16,12 +16,10 @@
 
    ```
   MONGO_URL = 
-
-PORT = 8000
-
-CLOUD_NAME = 
-API_KEY=
-API_SECRET = 
+   PORT = 8000
+   CLOUD_NAME = 
+   API_KEY=
+   API_SECRET = 
    ```
 
    Provide the necessary values for the environment variables.
