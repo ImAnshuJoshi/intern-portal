@@ -14,7 +14,7 @@ const companySchema = new mongoose.Schema({
     required: true,
   },
   duration: {
-    type: String,
+    type: Number,
     required: true,
   },
   experience: {
@@ -52,7 +52,7 @@ const companySchema = new mongoose.Schema({
     required: true,
   },
   skills: {
-    type: String,
+    type: [String],
     required: true,
   },
   aboutUs: {
@@ -64,11 +64,15 @@ const companySchema = new mongoose.Schema({
     required: true,
   },
   responsibilities: {
-    type: String,
+    type: [String],
     required: true,
   },
   cloudinaryId: String,
   image: String,
+  createdAt: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
 const company = mongoose.model("company", companySchema);
